@@ -54,11 +54,6 @@
           padding-top: 200px;
           color: white;
         }
-      
-        .header img {
-            width: 564;
-            height: 265;
-        }
 
         main {
           color: white;
@@ -192,6 +187,56 @@
           width: 500px;
           height: 100px;
         }
+
+        .overlay {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6);
+          display: none; /* 처음엔 안 보이게 */
+          justify-content: center;
+          align-items: center;
+          z-index: 9999;
+        }
+
+        .overlay-box {
+          background-color: #ffffff;
+          width: 320px;
+          padding: 30px 20px;
+          border-radius: 16px;
+          text-align: center;
+        }
+
+        .overlay-title {
+          font-family: "OTEnjoystoriesBA";
+          font-size: 28px;
+          color: #5b2386;
+          margin-bottom: 10px;
+        }
+
+        .overlay-text {
+          font-size: 14px;
+          margin-bottom: 20px;
+        }
+
+        .overlay-img {
+          width: 150px;
+          margin-bottom: 20px;
+        }
+
+        .overlay-btn {
+          width: 100%;
+          height: 48px;
+          border: none;
+          border-radius: 24px;
+          background-color: #fcee21;
+          color: #5b2386;
+          font-family: "GmarketSansBold";
+          font-size: 14px;
+          cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -227,14 +272,14 @@
           <button onclick="updateResult()" class="button1">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
 
           <section class="third">
-            <div class="result-box" style="font-size:48px; padding:150px; font-family:GmarketSansMedium;">
+            <div class="result-box">
               당신은 <span id="fieldResult" class="highlight"></span>
               전문가가 되기 위해서<br>
               대략 <span id="dayResult" class="highlight"></span>일 이상 훈련하셔야 합니다! :)
             </div>
           </section>
 
-          <button class="button2">훈련하러 가기 GO! GO!</button><button class="button3">공유하기</button>
+          <button class="button2" id="open-overlay">훈련하러 가기 GO! GO!</button><button class="button3">공유하기</button>
         </main>
         <footer>
           <img src="./img/logo.png" alt="위니브 로고">
@@ -243,6 +288,18 @@
             수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
           </div>
         </footer>
+        <div id="overlay" class="overlay">
+          <div class="overlay-box">
+            <p class="overlay-title">화이팅!!! 💜💜💜</p>
+            <p class="overlay-text">당신의 꿈을 응원합니다!</p>
+        
+            <img src="./img/licat.png" alt="라이캣" class="overlay-img">
+        
+            <button id="overlay-close" class="overlay-btn">
+              종료하고 진짜 훈련하러 가기 GO!GO!
+            </button>
+          </div>
+        </div>
     </div>
 
 <script>
@@ -259,6 +316,18 @@ function updateResult() {
         document.getElementById("dayResult").textContent = "?";
     }
 }
+
+const openOverlayBtn = document.getElementById("open-overlay");
+const overlay = document.getElementById("overlay");
+const closeOverlayBtn = document.getElementById("overlay-close");
+
+openOverlayBtn.addEventListener("click", function () {
+  overlay.style.display = "flex";
+});
+closeOverlayBtn.addEventListener("click", function () {
+  overlay.style.display = "none";
+});
+
 </script>
 
 </body>
