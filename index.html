@@ -65,7 +65,6 @@
             font-style: normal;
             font-size: 64px;
             line-height: 40px;
-            letter-spacing: 0%;
             text-align: center;
             vertical-align: middle;
             color: #F5DF4D;
@@ -75,20 +74,23 @@
 
         .text2 {
             font-family: "GmarketSansBold";
-            font-weight: 700px;
             font-size: 48px;
             line-height: 100%;
-            letter-spacing: 0%;
+        }
+
+        .text2 .light {
+          font-family: "GmarketSansMedium";
+          font-size: 36px;
         }
 
         .text3 {
             font-family: "GmarketSansMedium";
             font-size: 36px;
-        }
+        }  
 
         .first img {
-          width: 900px;
-          height: 63px;
+            width: 80px;
+            height: 70px;
         }
 
         .second {
@@ -161,7 +163,7 @@
         .third {
           font-family: "GmarketSansMedium";
           font-size: 48px;
-          padding: 100px;
+          padding: 200px;
         }
 
         .highlight {
@@ -196,16 +198,17 @@
             <p class="text1">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
         </header>
         <main>
-          <section class="first">
-            <img src="./quotes.png" alt="따옴표">
-              <p class="text2">1만 시간의 법칙은</p>
+          <div class="first">
+            <img src="./quotes1.png" class="quote left" alt="왼쪽 따옴표">
+              <p class="text2">1만 시간의 법칙<span class=light>은</span></p>
               <p class="text3">
                   어떤 분야의 전문가가 되기 위해서는<br />
                   최소한 1만 시간의 훈련이 필요하다는 법칙이다.
               </p>
-          </section>
+              <img src="./quotes2.png" class="quote right" alt="오른쪽 따옴표">
+          </div>
 
-          <section class="second">
+          <div class="second">
             <div>
               나는
               <input id="fieldInput" class="input-box" type="text" placeholder="예)프로그래밍">
@@ -217,17 +220,17 @@
               <input id="hourInput" class="input-box" type="number" placeholder="예)5시간">
               시간씩 훈련할 것이다.
             </div>
-          </section>
+          </div>
 
           <button class="button1">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
 
-          <section class="third">
+          <div class="third">
             <div class="result-box">
               당신은 <div class="highlight">프로그래밍</div>
               전문가가 되기 위해서<br>
               대략 <div class="highlight">5110</div>일 이상 훈련하셔야 합니다! :)
             </div>
-          </section>
+          </div>
 
           <button class="button2">훈련하러 가기 GO! GO!</button><button class="button3">공유하기</button>
         </main>
@@ -238,8 +241,6 @@
             수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
           </div>
         </footer>
-          </div>
-        </div>
     </div>
 </body>
 </html>
