@@ -204,59 +204,181 @@
           width: 500px;
           height: 100px;
         }
+
+        @media (max-width: 480px) {
+          body {
+            align-items: flex-start;
+          }
+
+          .container {
+            width: 100%;
+            padding: 0 16px;
+            box-sizing: border-box;
+          }
+
+          header {
+            padding-top: 80px;  
+          }
+
+          .clock {
+            width: 220px;  
+            transform: translate(-50%, -65%);
+          }
+
+          .title {
+            width: 280px;       
+            max-width: 100%;
+          }
+
+          .text1 {
+            font-size: 22px;    
+            line-height: 1.3;
+            padding-top: 28px;
+            padding-bottom: 60px;
+          }
+
+          .text2 {
+            font-size: 24px;    
+          }
+
+          .text2 .light {
+            font-size: 20px;   
+          }
+
+          .text3 {
+            font-size: 16px;   
+            line-height: 1.6;
+          }
+
+          .first img {
+            width: 34px;       
+            height: auto;
+          }
+
+          .second {
+            padding-top: 40px;  
+            padding-bottom: 60px;
+            font-size: 16px;     
+            line-height: 1.6;
+          }
+
+          .input-box {
+            width: 150px;     
+            height: 40px;        
+            font-size: 16px;   
+            border-radius: 12px;
+            padding: 6px 10px;
+          }
+
+          .button1 {
+            width: 100%;     
+            max-width: 320px;
+            height: 54px;       
+            font-size: 14px;   
+            border-radius: 12px;
+            display: block;
+            margin: 0 auto;   
+          }
+
+          .click {
+            width: 34px;        
+            height: auto;
+            display: block;
+            margin: 8px auto 0;  
+          }
+
+          .third {
+            font-size: 16px;    
+            padding: 60px 0;     
+            line-height: 1.6;
+          }
+
+          .highlight {
+            font-size: 40px;     
+            padding: 0;
+            border-radius: 8px;
+          }
+
+          .button2, .button3 {
+            width: 100%;
+            max-width: 320px;
+            height: 54px;       
+            font-size: 16px;    
+            border-radius: 12px;
+            line-height: 54px;
+            display: block;
+            margin: 10px auto;  
+          }
+
+          .button2 {
+            margin-right: 0;   
+          }
+
+          footer {
+            padding-top: 80px;   
+            padding-bottom: 60px;
+            font-size: 10px;   
+            line-height: 1.5;
+          }
+
+          footer img {
+            width: 180px;     
+            height: auto;
+          }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="./clock.png" class="clock" alt="시계 배경">
-            <img src="./title.png" class="title" alt="1만 시간의 법칙 타이틀">
-            <p class="text1">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
-        </header>
-        <main>
-          <div class="first">
-            <img src="./quotes1.png" class="quote left" alt="왼쪽 따옴표">
-              <p class="text2">1만 시간의 법칙<span class=light>은</span></p>
-              <p class="text3">
-                  어떤 분야의 전문가가 되기 위해서는<br />
-                  최소한 1만 시간의 훈련이 필요하다는 법칙이다.
-              </p>
-              <img src="./quotes2.png" class="quote right" alt="오른쪽 따옴표">
-          </div>
+  <div class="container">
+      <header>
+        <img src="./clock.png" class="clock" alt="시계 배경">
+        <img src="./title.png" class="title" alt="1만 시간의 법칙 타이틀">
+        <p class="text1">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+      </header>
+      <main>
+        <div class="first">
+          <img src="./quotes1.png" class="quote left" alt="왼쪽 따옴표">
+            <p class="text2">1만 시간의 법칙<span class=light>은</span></p>
+            <p class="text3">
+              어떤 분야의 전문가가 되기 위해서는<br />
+              최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+            </p>
+            <img src="./quotes2.png" class="quote right" alt="오른쪽 따옴표">
+        </div>
 
-          <div class="second">
-            <div>
-              나는
-              <input id="fieldInput" class="input-box" type="text" placeholder="예)프로그래밍">
-              전문가가 될 것이다.
-            </div>
-            <br />
-            <div>
-              그래서 앞으로 매일 하루에
-              <input id="hourInput" class="input-box" type="number" placeholder="예)5시간">
-              시간씩 훈련할 것이다.
-            </div>
-          </div>
-
-          <button class="button1">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button><img src="./click.png" alt="" class="click">
-
-          <div class="third">
-            <div class="result-box">
-              당신은 <div class="highlight">프로그래밍</div>
-              전문가가 되기 위해서<br>
-              대략 <div class="highlight">5110</div>일 이상 훈련하셔야 합니다! :)
-            </div>
-          </div>
-
-          <button class="button2">훈련하러 가기 GO! GO!</button><button class="button3">공유하기</button>
-        </main>
-        <footer>
-          <img src="./logo.png" alt="위니브 로고">
+        <div class="second">
           <div>
-            본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br />
-            수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+            나는
+            <input id="fieldInput" class="input-box" type="text" placeholder="예)프로그래밍">
+            전문가가 될 것이다.
           </div>
-        </footer>
-    </div>
+          <br />
+          <div>
+            그래서 앞으로 매일 하루에
+            <input id="hourInput" class="input-box" type="number" placeholder="예)5시간">
+            시간씩 훈련할 것이다.
+          </div>
+        </div>
+
+        <button class="button1">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button><img src="./click.png" alt="" class="click">
+
+        <div class="third">
+          <div class="result-box">
+            당신은 <div class="highlight">프로그래밍</div>
+            전문가가 되기 위해서<br>
+            대략 <div class="highlight">5110</div>일 이상 훈련하셔야 합니다! :)
+          </div>
+        </div>
+
+        <button class="button2">훈련하러 가기 GO! GO!</button><button class="button3">공유하기</button>
+      </main>
+      <footer>
+        <img src="./logo.png" alt="위니브 로고">
+        <div>
+          본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br />
+          수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+        </div>
+      </footer>
+  </div>
 </body>
 </html>
