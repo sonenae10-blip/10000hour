@@ -9,7 +9,7 @@ HTML과 CSS를 기반으로 웹 퍼블리싱 및 레이아웃 구현 역량을 �
 
 <strong>🔗 배포 URL</strong>
 https://sonenae10-blip.github.io/10000hour/
-<img width="677" height="882" alt="image" src="https://github.com/user-attachments/assets/6a9b8073-3497-4833-b1ca-31c3d34666de" />
+<img width="1376" height="882" alt="image" src="https://github.com/user-attachments/assets/fe108e6a-f1c5-4c04-9368-d14634f7ba61" />
 <hr />
 
 <h2>2. 기획 의도</h2>
