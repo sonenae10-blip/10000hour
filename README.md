@@ -67,7 +67,7 @@ Noonnu CDN 및 Noto Sans KR 폰트 적용으로 타이포그래피 품질 강화
 4. Deployment
 
 GitHub Pages 정적 배포
-
+<hr />
 <h2>4. 구현 포인트</h2>
 1. 메인 비주얼 오버레이 레이아웃
 
