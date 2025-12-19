@@ -31,8 +31,6 @@ Flexbox 기반 레이아웃 구성
 
 Media Query를 활용한 반응형 디자인
 
-Reset CSS 적용으로 브라우저 간 스타일 차이 최소화
-
 <h3>Tools</h3>
 
 - <h4>Git / GitHub</h4>
