@@ -24,19 +24,19 @@ https://sonenae10-blip.github.io/10000hour/
 | 사용자 입력/연산 | JavaScript 기반 DOM 조작 및 계산 로직 |<br>
 <hr />
 <h2>3. 폴더 구조</h2>
-/one-million-hours
-│
-├─ index.html
-├─ reset.css
-├─ style.css
-│
-└─ img
-   ├─ clock.png
-   ├─ title.png
-   ├─ quotes1.png
-   ├─ quotes2.png
-   ├─ click.png
-   └─ logo.png
+/one-million-hours<br>
+│<br>
+├─ index.html<br>
+├─ reset.css<br>
+├─ style.css<br>
+│<br>
+└─ img<br>
+   ├─ clock.png<br>
+   ├─ title.png<br>
+   ├─ quotes1.png<br>
+   ├─ quotes2.png<br>
+   ├─ click.png<br>
+   └─ logo.png<br>
 <hr />
 <h2>4. 구현 포인트</h2>
 1. 메인 비주얼 오버레이 레이아웃
