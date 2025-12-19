@@ -4,323 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>일만시간의 법칙</title>
-    <style>
-        @font-face {
-            font-family: "OTEnjoystoriesBA";
-            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff")
-                format("woff");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "GmarketSansBold";
-            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff")
-                format("woff");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "GmarketSansMedium";
-            src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-                format("woff");
-            font-weight: normal;
-            font-style: normal;
-        }
-
-        @font-face {
-            font-family: "Noto Sans KR";
-            font-style: normal;
-            font-weight: 400;
-            src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2")
-                format("woff2"),
-                url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff")
-                format("woff"),
-                url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf")
-                format("opentype");
-        }
-
-        body {
-            background-color: #5B2386;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .hero {
-          padding-top: 200px;
-          color: white;
-          position: relative;
-        }
-
-        .hero-clock {
-          position: absolute;
-          z-index: 0;
-          width: 220px;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
-        }
-
-        .hero-title {
-          position: relative;
-          width: 530px;
-          z-index: 1;
-        }
-
-        main {
-          color: white;
-        }
-
-        .hero-quote {
-            font-family: "OTEnjoystoriesBA";
-            font-weight: 400;
-            font-style: normal;
-            font-size: 36px;
-            line-height: 40px;
-            text-align: center;
-            vertical-align: middle;
-            color: #F5DF4D;
-            padding-top: 50px;
-            padding-bottom: 80px;
-        }
-
-        .rule-title {
-            font-family: "GmarketSansBold";
-            font-size: 24px;
-            line-height: 100%;
-        }
-
-        .rule-title .light {
-          font-family: "GmarketSansMedium";
-          font-size: 18px;
-        }
-
-        .rule-desc {
-            font-family: "GmarketSansMedium";
-            font-size: 18px;
-        }  
-
-        .rule-block img {
-            width: 36px;
-            height: 32px;
-        }
-
-        .form-block {
-          padding-top: 100px;
-          font-family: "GmarketSansMedium";
-          font-size: 24px;
-          padding-bottom: 100px;
-        }
-
-        .input-box {
-          font-family: "GmarketSansMedium";
-          background: white;
-          padding: 8px 14px;
-          border-radius: 8px;
-          color: black;
-          font-size: 24px;
-          border: none;
-          outline: none;
-          text-align: center;
-          width: 200px;
-          height: 50px;
-        }
-
-        .btn {
-          font-family: "GmarketSansBold";
-          font-size: 24px;
-          color: #5B2386;
-          border-radius: 12px;
-          text-align: center;
-          line-height: auto; 
-        }
-
-        .btn-primary {
-          width: 567px;
-          height: 64px;
-          background-color: #FCEE21;
-          text-align: center;
-        }
-
-        .btn-go {
-          width: 365px;
-          height: 64px;
-          background-color: #FCEE21;
-          margin-right: 20px;
-        }
-
-        .btn-share {
-          width: 193px;
-          height: 64px;
-          background-color: white;
-        }
-
-        .btn-primary:hover,
-        .btn-go:hover,
-        .btn-share:hover {
-          opacity: 0.9;
-          cursor: pointer;
-        }
-
-        .icon-click {
-          width: 90px;
-          height: 105px;
-        }
-
-        .cta-row {
-          display: flex;
-          align-items: center;
-          gap: 10px;
-          justify-content: center;
-          margin: 0 auto;
-        }
-
-        .result-section {
-          font-family: "GmarketSansMedium";
-          font-size: 24px;
-          padding: 100px;
-        }
-
-        .result-highlight {
-          padding: 8px 14px;
-          border-radius: 12px;
-          color: white;
-          font-family: "GmarketSansBold";
-          display: inline-block;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          font-size: 72px;
-        }
-
-        footer {
-          padding-top: 100px;
-          padding-bottom: 100px;
-          font-size: 12px;
-          color: white;
-        }
-
-        footer img {
-          width: 168px;
-          height: 36px;
-        }
-
-        .text-ir {
-          position: absolute;
-          width: 1px;
-          height: 1px;
-          padding: 0;
-          margin: -1px;
-          overflow: hidden;
-          clip: rect(0,0,0,0);
-          white-space: nowrap;
-          border: 0;
-        }
-
-
-        @media (max-width: 768px) {
-          .hero {
-            padding-top: 120px;
-          }
-
-          .hero-clock {
-            width: 110px;
-          }
-
-          .hero-title {
-            width: 278px;
-            max-width: 360px;
-          }
-
-          .hero-quote {
-            font-size: 22px;
-            line-height: auto;
-            padding: 30px 16px 50px;
-          }
-
-          .rule-title {
-            font-size: 14px;
-          }
-
-          .rule-title .light {
-            font-size: 14px;
-          }
-
-          .rule-desc {
-            font-size: 14px;
-          }
-
-          .rule-block img {
-            width: 20px;
-            height: 18px;
-        }
-
-          .form-block {
-            padding: 60px 16px;
-            font-size: 14px;
-          }
-
-          .input-box {
-          width: 156px;
-          height: 38px;
-          font-size: 14px;
-          }
-
-          .btn-primary {
-            width: 240px;
-            max-width: 320px;
-            height: 72px;
-            font-size: 14px;
-          }
-
-          .icon-click {
-            width: 43px;
-            height: 48px;
-          }
-
-          .cta-row {
-            flex-direction: row;
-            gap: 10px;
-          }
-
-          .btn-go{
-            width: 203px;
-            max-width: 320px;
-            height: 46px;
-            font-size: 14px;
-            margin-right: 0;
-          }
-
-          .btn-share {
-            width: 102px;
-            height: 46px;
-            font-size: 14px;
-          }
-
-          .result-section {
-            padding: 60px 16px;
-            font-size: 14px;
-          }
-
-          .result-highlight {
-            font-size: 24px;
-          }
-
-          footer {
-            padding: 60px 16px;
-            font-size: 9px;
-          }
-
-          footer img {
-            width: 125px;
-            height: 28;
-          }
-        }
-    </style>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
   <div class="container">
@@ -333,7 +18,7 @@
         <section class="rule-block">
           <img src="./img/quotes1.png" class="quote left" alt="왼쪽 따옴표">
           <h2 class="text-ir">1만 시간의 법칙 소개</h2>
-            <p class="rule-title">1만 시간의 법칙<span class=light>은</span></p>
+            <p class="rule-title">1만 시간의 법칙<span class="light">은</span></p>
             <p class="rule-desc">
               어떤 분야의 전문가가 되기 위해서는<br>
               최소한 1만 시간의 훈련이 필요하다는 법칙이다.
@@ -345,14 +30,14 @@
           <h2 class="text-ir">훈련 목표 및 하루 훈련 시간 입력</h2>
           <div>
             나는
-            <label class="text-ir">분야</label>
+            <label class="text-ir" for="fieldInput">분야</label>
             <input id="fieldInput" class="input-box" type="text" placeholder="예)프로그래밍">
             전문가가 될 것이다.
           </div>
           <br>
           <div>
             그래서 앞으로 매일 하루에
-            <label class="text-ir">시간</label>
+            <label class="text-ir" for="hourInput">시간</label>
             <input id="hourInput" class="input-box" type="number" placeholder="예)5시간">
             시간씩 훈련할 것이다.
           </div>
@@ -360,7 +45,7 @@
 
         <section class="cta-row">
           <h2 class="text-ir">1만 시간 달성을 위한 훈련 기간 계산</h2>
-          <button class="btn-primary">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+          <button type=button class="btn btn-primary">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
           <img src="./img/click.png" alt="" class="icon-click" />
         </section>
 
@@ -373,8 +58,8 @@
           </div>
         </section>
 
-        <button type=button class="btn-go">훈련하러 가기 GO! GO!</button>
-        <button type=button class="btn-share">공유하기</button>
+        <button type=button class="btn btn-go">훈련하러 가기 GO! GO!</button>
+        <button type=button class="btn btn-share">공유하기</button>
       </main>
       <footer>
         <img src="./img/logo.png" alt="위니브 로고">

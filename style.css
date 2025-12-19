@@ -128,8 +128,15 @@ main {
     font-size: 24px;
     color: #5B2386;
     border-radius: 12px;
-    text-align: center;
-    line-height: auto;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
 .btn-primary {
