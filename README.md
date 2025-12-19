@@ -15,38 +15,14 @@ https://sonenae10-blip.github.io/10000hour/
 <img width="1376" height="882" alt="image" src="https://github.com/user-attachments/assets/fe108e6a-f1c5-4c04-9368-d14634f7ba61" />
 <img width="250" height="500" alt="image" src="https://github.com/user-attachments/assets/a2a36ec3-b8f4-46b6-b8ad-ab64a229d300" />
 <hr />
-<h2>2. 화면 구성 및 사용자 흐름(UX Flow)</h2>
-1. Header 영역
+<h2>2. 기술 스택</h2>
+| 구성 영역      | 기술/도구                        |<br>
+| 프론트엔드     | HTML5, CSS3, JavaScript      |<br>
+| 빌드/호스팅    | GitHub Pages (정적 페이지 호스팅)    |<br>
+| 리소스 관리    | 이미지 리소스 파일 (PNG/SVG)         |<br>
+| 코드 저장소    | Git + GitHub                 |<br>
+| 사용자 입력/연산 | JavaScript 기반 DOM 조작 및 계산 로직 |<br>
 
-시계 이미지(clock.png)를 절대 위치로 배치하고, 타이틀(title.png)을 상단에 오버레이하는 구조로 메인 컨셉(시간)을 직관적으로 표현
-
-핵심 문구를 강조 색상으로 배치하여 첫 화면에서 메시지 전달<br><br>
-2. 소개 문구(First Section)
-
-따옴표 이미지(quotes1.png, quotes2.png)로 문장 양쪽을 시각적으로 감싸는 형태의 구성
-
-“1만 시간의 법칙” 문구에서 조사 “은”만 별도 스타일(굵기/크기)로 처리해 타이포그래피 위계 구현<br><br>
-3. 입력 영역(Second Section)
-
-목표 분야 입력: fieldInput (text)
-
-하루 훈련 시간 입력: hourInput (number)
-
-입력창은 흰색 배경/라운드 처리하여 배경색 대비를 확보하고 사용자 입력 집중도를 높임<br><br>
-4. CTA(Call To Action)
-
-“나는 며칠 동안…” 버튼(.btn-primary)과 클릭 유도 이미지(.icon-click)를 Flex로 가로 정렬하여 행동 유도 강화<br><br>
-5. 결과 표시 영역(Third Section)
-
-결과 문구 내 핵심 텍스트를 .result-highlight로 크게 강조하여 시각적 피드백 구조 확보
-(현재는 예시 텍스트 “프로그래밍 / 5110일” 형태로 출력)<br><br>
-6. 하단 액션 버튼
-
-메인 행동 버튼(.btn-go)과 보조 버튼(.btn-share)을 나란히 배치해 버튼 위계 구성<br><br>
-7. Footer
-
-로고 이미지 및 저작권 고지 문구를 포함해 서비스 형태의 완성도를 높임
-<hr />
 
 <h2>3. 구현 포인트</h2>
 1. 메인 비주얼 오버레이 레이아웃
