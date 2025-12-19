@@ -35,14 +35,14 @@ https://sonenae10-blip.github.io/10000hour/
 입력창은 흰색 배경/라운드 처리하여 배경색 대비를 확보하고 사용자 입력 집중도를 높임<br><br>
 4. CTA(Call To Action)
 
-“나는 며칠 동안…” 버튼(button1)과 클릭 유도 이미지(click.png)를 Flex로 가로 정렬하여 행동 유도 강화<br><br>
+“나는 며칠 동안…” 버튼(.btn-primary)과 클릭 유도 이미지(.icon-click)를 Flex로 가로 정렬하여 행동 유도 강화<br><br>
 5. 결과 표시 영역(Third Section)
 
-결과 문구 내 핵심 텍스트를 .highlight로 크게 강조하여 시각적 피드백 구조 확보
+결과 문구 내 핵심 텍스트를 .result-highlight로 크게 강조하여 시각적 피드백 구조 확보
 (현재는 예시 텍스트 “프로그래밍 / 5110일” 형태로 출력)<br><br>
 6. 하단 액션 버튼
 
-메인 행동 버튼(button2)과 보조 버튼(button3)을 나란히 배치해 버튼 위계 구성<br><br>
+메인 행동 버튼(.btn-go)과 보조 버튼(.btn-share)을 나란히 배치해 버튼 위계 구성<br><br>
 7. Footer
 
 로고 이미지 및 저작권 고지 문구를 포함해 서비스 형태의 완성도를 높임
