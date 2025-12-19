@@ -38,7 +38,7 @@ https://sonenae10-blip.github.io/10000hour/
 <h2>4. 프로젝트 진행 시기</h2>
 본 프로젝트는 단기간 내 기획부터 배포까지의 전 과정을 개인 단위로 수행한 웹 프로젝트입니다.<br>
 <img width="970" height="236" alt="image" src="https://github.com/user-attachments/assets/6f3b3078-eb8c-46b4-9bbd-7dac98ee47ae" />
-<strong>총 프로젝트 소요 기간: 2024.12.10 ~ 2024.12.19 (약 10일)</strong><br>
+<strong>총 프로젝트 소요 기간: 2025.12.10 ~ 2025.12.19 (약 10일)</strong><br>
 제한된 기간 내에 정적 웹 서비스의 화면 구성과 시각적 완성도를 중심으로 프로젝트를 진행하였으며, GitHub Pages 배포 환경에 대한 이해를 확보하였습니다.
 <hr />
 <h2>5. 구현 포인트</h2>
