@@ -17,8 +17,29 @@ https://sonenae10-blip.github.io/10000hour/
 <img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/dbbaabb1-edd9-4e36-9507-597122f17756" />
 <hr />
 <h2>2. 기술 스택</h2>
-본 서비스는 정적 웹 사이트로 구현되어 있으며, 다음과 같은 기술 스택이 사용되었습니다.
-<img width="812" height="312" alt="image" src="https://github.com/user-attachments/assets/fe0a45a8-2b95-43b1-8447-fafa5cbdfa78" />
+
+<h3>Frontend</h3>
+
+- <h4>HTML5</h4>
+시맨틱 태그(header, main, section, footer 등) 사용
+
+접근성을 고려한 이미지 대체 텍스트 적용
+
+- <h4>CSS3</h4>
+
+Flexbox 기반 레이아웃 구성
+
+Media Query를 활용한 반응형 디자인
+
+Reset CSS 적용으로 브라우저 간 스타일 차이 최소화
+
+<h3>Tools</h3>
+
+- <h4>Git / GitHub</h4>
+
+형상 관리 및 코드 이력 관리
+
+GitHub Pages를 통한 정적 사이트 배포
 <hr />
 <h2>3. 폴더 구조</h2>
 /one-million-hours<br>
