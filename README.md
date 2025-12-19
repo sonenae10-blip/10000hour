@@ -47,28 +47,7 @@ https://sonenae10-blip.github.io/10000hour/
 
 로고 이미지 및 저작권 고지 문구를 포함해 서비스 형태의 완성도를 높임
 <hr />
-
-<h2>3. 기술 스택</h2>
-1. HTML5
-
-시맨틱 구조 기반 레이아웃 구성 (header, main, footer)
-
-입력 폼 요소(id 기반) 구성으로 확장성 확보<br><br>
-2. CSS3
-
-position: absolute + transform를 활용한 이미지 오버레이(시계/타이틀)
-
-Flexbox(.cta)를 통한 버튼/이미지 정렬
-
-반응형 처리(@media (max-width: 480px))로 모바일 UI 최적화<br><br>
-3. Web Font
-
-Noonnu CDN 및 Noto Sans KR 폰트 적용으로 타이포그래피 품질 강화<br><br>
-4. Deployment
-
-GitHub Pages 정적 배포
-<hr />
-<h2>4. 구현 포인트</h2>
+<h2>3. 구현 포인트</h2>
 1. 메인 비주얼 오버레이 레이아웃
 
 시계 배경 이미지를 absolute로 중앙 정렬하고, 타이틀을 상대적 레이어로 상단 유지하여 디자인 의도 반영<br><br>
@@ -82,16 +61,3 @@ GitHub Pages 정적 배포
 
 480px 기준으로 폰트, 버튼 크기, 이미지 크기, padding을 재정의하여 작은 화면에서도 사용 가능하도록 조정
 <hr />
-
-<h2>5. 향후 개선 방향</h2>
-JavaScript를 추가하여 입력값 기반으로 1만 시간 달성 일수 계산 및 결과 동적 출력
-
-입력값 검증(빈 값/0 이하/비정상 값) 및 사용자 안내 메시지 추가
-
-접근성 개선(버튼 type 명시, label 연결, alt 텍스트 보강 등)
-
-더 다양한 화면 크기 대응(태블릿 구간 브레이크포인트 추가)
-<hr />
-
-<h2>6. 제작자</h2>
-개인 퍼블리싱 프로젝트 (HTML/CSS 기반)
