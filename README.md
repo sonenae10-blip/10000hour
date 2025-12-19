@@ -13,7 +13,7 @@
 <strong>🔗 배포 URL</strong>
 https://sonenae10-blip.github.io/10000hour/
 <img width="1376" height="882" alt="image" src="https://github.com/user-attachments/assets/fe108e6a-f1c5-4c04-9368-d14634f7ba61" />
-<img width="500" height="1000" alt="image" src="https://github.com/user-attachments/assets/a2a36ec3-b8f4-46b6-b8ad-ab64a229d300" />
+<img width="250" height="500" alt="image" src="https://github.com/user-attachments/assets/a2a36ec3-b8f4-46b6-b8ad-ab64a229d300" />
 <hr />
 <h2>2. 화면 구성 및 사용자 흐름(UX Flow)</h2>
 1. Header 영역
