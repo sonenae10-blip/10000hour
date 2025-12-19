@@ -12,8 +12,9 @@
 
 <strong>🔗 배포 URL</strong>
 https://sonenae10-blip.github.io/10000hour/
-<img width="1527" height="817" alt="image" src="https://github.com/user-attachments/assets/cf53df81-e2d2-4bfd-8a79-374c7e71d6ac" />
-<img width="250" height="500" alt="image" src="https://github.com/user-attachments/assets/a2a36ec3-b8f4-46b6-b8ad-ab64a229d300" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/cf53df81-e2d2-4bfd-8a79-374c7e71d6ac" /><br>
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/e4aeb3c5-a21f-411b-a206-d462a1604e9e" />
+<img width="200" height="400" alt="image" src="https://github.com/user-attachments/assets/dbbaabb1-edd9-4e36-9507-597122f17756" />
 <hr />
 <h2>2. 기술 스택</h2>
 본 서비스는 정적 웹 사이트로 구현되어 있으며, 다음과 같은 기술 스택이 사용되었습니다.
