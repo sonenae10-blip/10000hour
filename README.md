@@ -22,9 +22,23 @@ https://sonenae10-blip.github.io/10000hour/
 | 리소스 관리    | 이미지 리소스 파일 (PNG/SVG)         |<br>
 | 코드 저장소    | Git + GitHub                 |<br>
 | 사용자 입력/연산 | JavaScript 기반 DOM 조작 및 계산 로직 |<br>
-
-
-<h2>3. 구현 포인트</h2>
+<hr />
+<h2>3. 폴더 구조</h2>
+/one-million-hours
+│
+├─ index.html
+├─ reset.css
+├─ style.css
+│
+└─ img
+   ├─ clock.png
+   ├─ title.png
+   ├─ quotes1.png
+   ├─ quotes2.png
+   ├─ click.png
+   └─ logo.png
+<hr />
+<h2>4. 구현 포인트</h2>
 1. 메인 비주얼 오버레이 레이아웃
 
 시계 배경 이미지를 absolute로 중앙 정렬하고, 타이틀을 상대적 레이어로 상단 유지하여 디자인 의도 반영<br><br>
