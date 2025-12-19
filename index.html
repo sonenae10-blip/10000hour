@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>일만시간의 법칙</title>
     <style>
         @font-face {
             font-family: "OTEnjoystoriesBA";
@@ -130,40 +130,33 @@
           height: 50px;
         }
 
-        .btn-primary {
+        .btn {
           font-family: "GmarketSansBold";
           font-size: 24px;
           color: #5B2386;
+          border-radius: 12px;
+          text-align: center;
+          line-height: auto; 
+        }
+
+        .btn-primary {
           width: 567px;
           height: 64px;
-          border-radius: 12px;
           background-color: #FCEE21;
           text-align: center;
         }
 
         .btn-go {
-          font-family: "GmarketSansBold";
-          font-size: 24px;
-          color: #5B2386;
           width: 365px;
           height: 64px;
-          border-radius: 12px;
           background-color: #FCEE21;
-          text-align: center;
-          line-height: auto; 
           margin-right: 20px;
         }
 
         .btn-share {
-          font-family: "GmarketSansBold";
-          font-size: 24px;
-          color: #5B2386;
           width: 193px;
           height: 64px;
-          border-radius: 12px;
           background-color: white;
-          text-align: center;
-          line-height: auto;
         }
 
         .btn-primary:hover,
@@ -215,6 +208,19 @@
           width: 168px;
           height: 36px;
         }
+
+        .text-ir {
+          position: absolute;
+          width: 1px;
+          height: 1px;
+          padding: 0;
+          margin: -1px;
+          overflow: hidden;
+          clip: rect(0,0,0,0);
+          white-space: nowrap;
+          border: 0;
+        }
+
 
         @media (max-width: 768px) {
           .hero {
@@ -324,45 +330,51 @@
         <p class="hero-quote">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
       </header>
       <main>
-        <div class="rule-block">
+        <section class="rule-block">
           <img src="./img/quotes1.png" class="quote left" alt="왼쪽 따옴표">
+          <h2 class="text-ir">1만 시간의 법칙 소개</h2>
             <p class="rule-title">1만 시간의 법칙<span class=light>은</span></p>
             <p class="rule-desc">
               어떤 분야의 전문가가 되기 위해서는<br>
               최소한 1만 시간의 훈련이 필요하다는 법칙이다.
             </p>
             <img src="./img/quotes2.png" class="quote right" alt="오른쪽 따옴표">
-        </div>
+        </section>
 
-        <div class="form-block">
+        <section class="form-block">
+          <h2 class="text-ir">훈련 목표 및 하루 훈련 시간 입력</h2>
           <div>
             나는
+            <label class="text-ir">분야</label>
             <input id="fieldInput" class="input-box" type="text" placeholder="예)프로그래밍">
             전문가가 될 것이다.
           </div>
           <br>
           <div>
             그래서 앞으로 매일 하루에
+            <label class="text-ir">시간</label>
             <input id="hourInput" class="input-box" type="number" placeholder="예)5시간">
             시간씩 훈련할 것이다.
           </div>
-        </div>
+        </section>
 
-        <div class="cta-row">
+        <section class="cta-row">
+          <h2 class="text-ir">1만 시간 달성을 위한 훈련 기간 계산</h2>
           <button class="btn-primary">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
           <img src="./img/click.png" alt="" class="icon-click" />
-        </div>
+        </section>
 
-        <div class="result-section">
+        <section class="result-section">
+          <h2 class="text-ir">1만 시간 훈련 결과 안내</h2>
           <div class="result-box">
-            당신은 <div class="result-highlight">프로그래밍</div>
+            당신은 <span class="result-highlight">프로그래밍</span>
             전문가가 되기 위해서<br>
-            대략 <div class="result-highlight">5110</div>일 이상 훈련하셔야 합니다! :)
+            대략 <span class="result-highlight">5110</span>일 이상 훈련하셔야 합니다! :)
           </div>
-        </div>
+        </section>
 
-        <button class="btn-go">훈련하러 가기 GO! GO!</button>
-        <button class="btn-share">공유하기</button>
+        <button type=button class="btn-go">훈련하러 가기 GO! GO!</button>
+        <button type=button class="btn-share">공유하기</button>
       </main>
       <footer>
         <img src="./img/logo.png" alt="위니브 로고">
