@@ -24,7 +24,6 @@ https://sonenae10-blip.github.io/10000hour/
 /one-million-hours<br>
 │<br>
 ├─ index.html<br>
-├─ reset.css<br>
 ├─ style.css<br>
 │<br>
 └─ img<br>
