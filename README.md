@@ -61,4 +61,3 @@ https://sonenae10-blip.github.io/10000hour/
 4. 모바일 반응형
 
 480px 기준으로 폰트, 버튼 크기, 이미지 크기, padding을 재정의하여 작은 화면에서도 사용 가능하도록 조정
-<hr />
