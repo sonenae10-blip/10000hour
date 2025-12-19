@@ -50,13 +50,13 @@
             text-align: center;
         }
 
-        header {
+        .hero {
           padding-top: 200px;
           color: white;
           position: relative;
         }
 
-        .clock {
+        .hero-clock {
           position: absolute;
           z-index: 0;
           width: 520px;
@@ -65,7 +65,7 @@
           transform: translate(-50%, -68%);
         }
 
-        .title {
+        .hero-title {
           position: relative;
           z-index: 1;
         }
@@ -74,7 +74,7 @@
           color: white;
         }
 
-        .text1 {
+        .hero-quote {
             font-family: "OTEnjoystoriesBA";
             font-weight: 400;
             font-style: normal;
@@ -87,28 +87,28 @@
             padding-bottom: 160px;
         }
 
-        .text2 {
+        .rule-title {
             font-family: "GmarketSansBold";
             font-size: 48px;
             line-height: 100%;
         }
 
-        .text2 .light {
+        .rule-title .light {
           font-family: "GmarketSansMedium";
           font-size: 36px;
         }
 
-        .text3 {
+        .rule-desc {
             font-family: "GmarketSansMedium";
             font-size: 36px;
         }  
 
-        .first img {
+        .rule-block img {
             width: 80px;
             height: 70px;
         }
 
-        .second {
+        .form-block {
           padding-top: 120px;
           font-family: "GmarketSansMedium";
           font-size: 48px;
@@ -129,7 +129,7 @@
           height: 100px;
         }
 
-        .button1 {
+        .btn-primary {
           font-family: "GmarketSansBold";
           font-size: 48px;
           color: #5B2386;
@@ -140,7 +140,7 @@
           text-align: center;
         }
 
-        .button2 {
+        .btn-go {
           font-family: "GmarketSansBold";
           font-size: 48px;
           color: #5B2386;
@@ -153,7 +153,7 @@
           margin-right: 20px;
         }
 
-        .button3 {
+        .btn-share {
           font-family: "GmarketSansBold";
           font-size: 48px;
           color: #5B2386;
@@ -165,17 +165,19 @@
           line-height: 150px;
         }
 
-        .button1:hover, .button2:hover, .button3:hover {
+        .btn-primary:hover,
+        .btn-go:hover,
+        .btn-share:hover {
           opacity: 0.9;
           cursor: pointer;
         }
 
-        .click {
+        .icon-click {
           width: 180px;
           height: 210px;
         }
 
-        .btn {
+        .cta-row {
           display: flex;
           align-items: center;
           gap: 10px;
@@ -184,13 +186,13 @@
         }
 
 
-        .third {
+        .result-section {
           font-family: "GmarketSansMedium";
           font-size: 48px;
           padding: 200px;
         }
 
-        .highlight {
+        .result-highlight {
           padding: 8px 14px;
           border-radius: 12px;
           color: white;
@@ -227,16 +229,16 @@
             box-sizing: border-box;
           }
 
-          header {
+          hero {
             padding-top: 80px;  
           }
 
-          .clock {
+          .hero-clock {
             width: 150px;  
             transform: translate(-50%, -80%);
           }
 
-          .title {
+          .hero-title {
             width: 350px;       
             max-width: 100%;
           }
@@ -245,32 +247,32 @@
             text-align: center;
           }
 
-          .text1 {
+          .hero-quote {
             font-size: 22px;    
             line-height: 1.3;
             padding-top: 60px;
             padding-bottom: 60px;
           }
 
-          .text2 {
+          .rule-title {
             font-size: 16px;    
           }
 
-          .text2 .light {
+          .rule-title .light {
             font-size: 16px;   
           }
 
-          .text3 {
+          .rule-desc {
             font-size: 16px;   
             line-height: 1.6;
           }
 
-          .first img {
+          .rule-block img {
             width: 34px;       
             height: auto;
           }
 
-          .second {
+          .form-block {
             padding-top: 60px;  
             padding-bottom: 60px;
             font-size: 16px;     
@@ -285,7 +287,7 @@
             padding: 6px 10px;
           }
 
-          .button1 {
+          .btn-primary {
             width: 280px;     
             max-width: 100%;
             height: auto;
@@ -297,7 +299,7 @@
             line-height: 1.25;
           }
 
-          .click {
+          .icon-click {
             width: 34px;        
             height: auto;
             display: inline-block;
@@ -305,30 +307,30 @@
             margin-left: 10px; 
           }
 
-          .btn {
+          .cta-row {
             width: 100%;
             justify-content: center;
           }
 
-          .third {
+          .result-section {
             font-size: 16px;    
             padding: 40px 0;     
             line-height: 1.6;
           }
 
-          .highlight {
+          .result-highlight {
             font-size: 26px;     
             padding: 0;
             border-radius: 8px;
           }
 
-          .button2,
-          .button3 {
+          .btn-go,
+          .btn-share {
             display: inline-block;
             vertical-align: middle;
           }
 
-          .button2{
+          .btn-go {
             width: 220px;
             height: 48px;       
             font-size: 14px;    
@@ -337,7 +339,7 @@
             margin: 0 8px 0 0;  
           }
           
-          .button3 {
+          .btn-share {
             width: 90px; 
             height: 48px;
             font-size: 14px;
@@ -362,23 +364,23 @@
 </head>
 <body>
   <div class="container">
-      <header>
-        <img src="./img/clock.png" class="clock" alt="시계 배경">
-        <img src="./img/title.png" class="title" alt="1만 시간의 법칙 타이틀">
+      <header class="hero">
+        <img src="./img/clock.png" class="hero-clock" alt="시계 배경">
+        <img src="./img/title.png" class="hero-title" alt="1만 시간의 법칙 타이틀">
         <p class="text1">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
       </header>
       <main>
-        <div class="first">
+        <div class="rule-block">
           <img src="./img/quotes1.png" class="quote left" alt="왼쪽 따옴표">
-            <p class="text2">1만 시간의 법칙<span class=light>은</span></p>
-            <p class="text3">
+            <p class="rule-title">1만 시간의 법칙<span class=light>은</span></p>
+            <p class="rule-desc">
               어떤 분야의 전문가가 되기 위해서는<br>
               최소한 1만 시간의 훈련이 필요하다는 법칙이다.
             </p>
             <img src="./img/quotes2.png" class="quote right" alt="오른쪽 따옴표">
         </div>
 
-        <div class="second">
+        <div class="form-block">
           <div>
             나는
             <input id="fieldInput" class="input-box" type="text" placeholder="예)프로그래밍">
@@ -392,17 +394,21 @@
           </div>
         </div>
 
-        <div class="btn"><button class="button1">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button><img src="./img/click.png" alt="" class="click"></div>
+        <div class="cta-row">
+          <button class="btn-primary">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+          <img src="./img/click.png" alt="" class="icon-click" />
+        </div>
 
-        <div class="third">
+        <div class="result-section">
           <div class="result-box">
-            당신은 <div class="highlight">프로그래밍</div>
+            당신은 <div class="result-highlight">프로그래밍</div>
             전문가가 되기 위해서<br>
-            대략 <div class="highlight">5110</div>일 이상 훈련하셔야 합니다! :)
+            대략 <div class="result-highlight">5110</div>일 이상 훈련하셔야 합니다! :)
           </div>
         </div>
 
-        <button class="button2">훈련하러 가기 GO! GO!</button><button class="button3">공유하기</button>
+        <button class="btn-go">훈련하러 가기 GO! GO!</button>
+        <button class="btn-share">공유하기</button>
       </main>
       <footer>
         <img src="./img/logo.png" alt="위니브 로고">
