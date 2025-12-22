@@ -3,115 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HODU 랜딩페이지</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>일만시간의 법칙</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
 </head>
 <body>
-    <header>
-        <h1 class="logo">
-            <span class="text-ir">호두 랜딩페이지 바로가기</span>
-            <a href="#"><img src="./img/logo.png" alt="HODU 로고"></a>
-        </h1>
-        <nav class="nav" aria-label="메인메뉴">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Support</a>
-            <button type="button" class="btn">Download</button>
-        </nav>
-    </header>
-
-    <main>
-        <section class="hero">
-            <div class="hero-text">
-                <h2 class="hero-title">
-                    Lorem Ipsum is simply<br>
-                    dummy text of the printing and
-                </h2>
-
-                <p class="hero-desc">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry.
-                    Lorem Ipsum has been the industry's standard dummy text
-                    ever since the 1500s.
-                </p>
-
-                <button type="button" class="btn">Download</button>
-            </div>
-
-            <div class="hero-image">
-                <img src="./img/box-cat.png" alt="박스를 뒤집어쓴 호두">
-            </div>
+  <div class="container">
+      <header class="hero">
+        <img src="./img/clock.png" class="hero-clock" alt="시계 배경">
+        <h1><img src="./img/title.png" class="hero-title" alt="1만 시간의 법칙 타이틀"></h1>
+        <p class="hero-quote">"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+      </header>
+      <main>
+        <section class="rule-block">
+          <img src="./img/quotes1.png" class="quote left" alt="왼쪽 따옴표">
+          <h2 class="text-ir">1만 시간의 법칙 소개</h2>
+            <p class="rule-title">1만 시간의 법칙<span class="light">은</span></p>
+            <p class="rule-desc">
+              어떤 분야의 전문가가 되기 위해서는<br>
+              최소한 1만 시간의 훈련이 필요하다는 법칙이다.
+            </p>
+            <img src="./img/quotes2.png" class="quote right" alt="오른쪽 따옴표">
         </section>
 
-        <section class="about">
-            <div class="about-image">
-                <img src="./img/img_4.jpg" alt="이불 위에 누워 있는 호두">
-            </div>
-            <div class="about-text">
-                <h2 class="about-title">
-                    Lorem Ipsum is simply dummy text of the printing and dummy text
-                </h2>
-
-                <p class="about-desc">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                </p>
-            </div>
+        <section class="form-block">
+          <h2 class="text-ir">훈련 목표 및 하루 훈련 시간 입력</h2>
+          <div>
+            나는
+            <label class="text-ir" for="fieldInput">분야</label>
+            <input id="fieldInput" class="input-box" type="text" placeholder="예)프로그래밍">
+            전문가가 될 것이다.
+          </div>
+          <br>
+          <div>
+            그래서 앞으로 매일 하루에
+            <label class="text-ir" for="hourInput">시간</label>
+            <input id="hourInput" class="input-box" type="number" placeholder="예)5시간">
+            시간씩 훈련할 것이다.
+          </div>
         </section>
 
-        <section class="gallery">
-            <div class="gallery-head">
-                <h2 class="gallery-title">
-                    dummy text of the printing and dummy
-                </h2>
-                <p class="gallery-desc">
-                    Lorem Ipsum is simply <span class="highlight">dummy text</span> of the printing and typesetting industry. <br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                </p>
-            </div>
-            <figure class="gallery-images">
-                <img src="./img/img_1.jpg" alt="캣타워에 누워있는 호두">
-                <img src="./img/img_2.jpg" alt="뒤돌아 있는 호두">
-                <img src="./img/img_3.jpg" alt="카메라를 바라보는 호두">
-                <figcaption class="text-ir">호두의 일상 사진 갤러리</figcaption>
-            </figure>
-            <div class="gallery-footer">
-                <p class="gallery-text">
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown
-                    Ipsum is simply dummy text of the printing and typesetting industry. 
-                </p>
-                <button type="button" class="btn">Learn More</button>
-            </div>
-            <article class="subscribe-box">
-                <div class="subscribe-text">
-                    <h2 class="subscribe-title">
-                        Subscribe to our Blog Post
-                    </h2>
-                    <p class="subscribe-desc">
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text 
-                    </p>
-                </div>
-                <form class="input-box" action="#" method="post">
-                    <img class="mail-icon" src="./img/mail.svg" alt="이메일 아이콘">
-                    <label for="fieldInput" class="text-ir">이메일 주소</label>
-                    <input id="fieldInput" class="input" type="email" name="email" placeholder="Enter your e-mail address" autocomplete="email"
-                    required>
-                    <button type="submit" class="btn">Subscribe</button>
-                </form> 
-            </article>
+        <section class="cta-row">
+          <h2 class="text-ir">1만 시간 달성을 위한 훈련 기간 계산</h2>
+          <button type="button" class="btn btn-primary">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+          <img src="./img/click.png" alt="" class="icon-click" />
         </section>
 
-        <section class="bg-section"></section>
-    </main>
-    <footer>  
-        <img src="./img/logo.png" alt="HODU 로고">
-        <nav class="nav" aria-label="소셜 미디어">
-            <a href="#" class="sns-icon"><img src="./img/blog.svg" alt="HODU 블로그 바로가기"></a> 
-            <a href="#" class="sns-icon"><img src="./img/instagram.svg" alt="HODU 인스타그램 바로가기"></a> 
-            <a href="#" class="sns-icon"><img src="./img/facebook.svg" alt="HODU 페이스북 바로가기"></a> 
-            <a href="#" class="sns-icon"><img src="./img/youtube.svg" alt="HODU 유튜브 바로가기"></a>
-        </nav>
-    </footer>
+        <section class="result-section">
+          <h2 class="text-ir">1만 시간 훈련 결과 안내</h2>
+          <div class="result-box">
+            당신은 <span class="result-highlight">프로그래밍</span>
+            전문가가 되기 위해서<br>
+            대략 <span class="result-highlight">5110</span>일 이상 훈련하셔야 합니다! :)
+          </div>
+        </section>
+
+        <button type="button" class="btn btn-go">훈련하러 가기 GO! GO!</button>
+        <button type="button" class="btn btn-share">공유하기</button>
+      </main>
+      <footer>
+        <img src="./img/logo.png" alt="위니브 로고">
+        <div>
+          본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br>
+          수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+        </div>
+      </footer>
+  </div>
 </body>
 </html>
